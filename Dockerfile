@@ -7,9 +7,9 @@ RUN apt-get install -y wget && \
   tar -zxf bats.tar.gz && \
   ./bats-0.4.0/install.sh /usr/local \
   rm -r bats-* && \
-  apt-get remove --purge wget && \
-  apt-get autoremove && \
-  apt-get clean
+  apt-get remove -y --purge wget && \
+  apt-get autoremove -y && \
+  apt-get clean -y
 
 RUN apt-get install -y \
   openssh-client \
