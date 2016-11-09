@@ -1,7 +1,7 @@
 # Debian CI Docker Container
 
 This container derives from
-[`vcatechnology/debian-ci`](https://hub.docker.com/r/vcatechnology/debian) which
+[`vcatechnology/debian`](https://hub.docker.com/r/vcatechnology/debian) which
 is built daily to ensure up-to-date packages. It includes the Bash Automated
 Testing System installed ready for testing shell scripts
 
