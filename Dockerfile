@@ -13,6 +13,7 @@ RUN apt-get install -y wget && \
 
 RUN apt-get install -y \
   openssh-client \
+  shellcheck \
   git \
   tar \
   bzip2 \

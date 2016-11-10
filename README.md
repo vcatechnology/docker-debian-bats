@@ -8,6 +8,7 @@ Testing System installed ready for testing shell scripts
 # Packages
 
   * [`git`](https://packages.debian.org/search?suite=default&section=all&arch=any&searchon=names&keywords=git)
+  * [`shellcheck`](https://packages.debian.org/search?suite=default&section=all&arch=any&searchon=names&keywords=shellcheck)
   * [`bats`](https://packages.debian.org/search?suite=default&section=all&arch=any&searchon=names&keywords=bats)
   * [`tar`](https://packages.debian.org/search?suite=default&section=all&arch=any&searchon=names&keywords=tar)
   * [`bzip2`](https://packages.debian.org/search?suite=default&section=all&arch=any&searchon=names&keywords=bzip2)
