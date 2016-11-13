@@ -18,21 +18,18 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.schema-version="1.0"
 
 # Eventually 'bats' will land in 'stable', for now we just install it manually
-RUN apt-get install -y wget && \
+RUN vca-install-package wget && \
   wget https://codeload.github.com/sstephenson/bats/tar.gz/v0.4.0 -q -Obats.tar.gz && \
   tar -zxf bats.tar.gz && \
   ./bats-0.4.0/install.sh /usr/local \
   rm -r bats-* && \
-  apt-get remove -y --purge wget && \
-  apt-get autoremove -y && \
-  apt-get clean -y
+  vca-uninstall-package wget
 
-RUN apt-get install -y \
+RUN vca-install-package \
   openssh-client \
   shellcheck \
   git \
   tar \
   bzip2 \
   gzip \
-  xz-utils \
-  && apt-get clean
+  xz-utils
