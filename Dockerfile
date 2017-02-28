@@ -27,6 +27,7 @@ RUN vca-install-package wget && \
 
 RUN vca-install-package \
   openssh-client \
+  openssh-server \
   shellcheck \
   git \
   tar \
