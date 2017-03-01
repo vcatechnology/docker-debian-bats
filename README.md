@@ -15,4 +15,3 @@ Testing System installed ready for testing shell scripts
   * [`gzip`](https://packages.debian.org/search?suite=default&section=all&arch=any&searchon=names&keywords=gzip)
   * [`xz-utils`](https://packages.debian.org/search?suite=default&section=all&arch=any&searchon=names&keywords=xz-utils)
   * [`openssh-client`](https://packages.debian.org/search?suite=default&section=all&arch=any&searchon=names&keywords=openssh-client)
-  * [`openssh-server`](https://packages.debian.org/search?suite=default&section=all&arch=any&searchon=names&keywords=openssh-server)
