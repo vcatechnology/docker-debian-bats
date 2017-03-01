@@ -14,6 +14,10 @@ start_sshd() {
   readonly known_hosts="${ssh}/known_hosts"
   readonly authorized="${ssh}/authorized_keys"
 
+  # Ensure files and directories exist.
+  mkdir -p "$ssh"
+  touch "$known_hosts"
+  touch "$authorized"
   # Note the trailing space (after "localhost ") is required for the known_hosts format.
   printf "localhost " >> "$known_hosts"
   cat "$public" >> "$known_hosts"
