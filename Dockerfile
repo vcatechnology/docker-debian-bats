@@ -34,3 +34,6 @@ RUN vca-install-package \
   bzip2 \
   gzip \
   xz-utils
+
+ADD entrypoint.sh /opt/entrypoint.sh
+ENTRYPOINT ["/bin/sh", "/opt/entrypoint.sh"]
